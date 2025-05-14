@@ -1,7 +1,5 @@
 # JavaScript Study Guide
 
-[Reference 01](https://www.udemy.com/course/the-complete-javascript-course/)
-
 Welcome to the JavaScript Study Guide! This document serves as a comprehensive resource to help you deepen your understanding of JavaScript, one of the most popular and versatile programming languages. Whether you're a beginner or looking to refine your skills, this guide will provide you with essential concepts, best practices, and practical examples to enhance your learning journey.
 
 Happy coding!
