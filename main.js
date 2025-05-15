@@ -1,8 +1,11 @@
 "use strict";
 
-import { handleButtonClick, handleEvent } from "./events/eventHandlers.js";
-import EventEmitter from "./events/eventEmitters.js";
-import { person } from "./objects/objects.js";
+import {
+	handleButtonClick,
+	handleEvent,
+} from "./experiments/events/eventHandlers.js";
+import EventEmitter from "./experiments/events/eventEmitters.js";
+import { person } from "./experiments/objects/objects.js";
 
 const emitter = new EventEmitter();
 
