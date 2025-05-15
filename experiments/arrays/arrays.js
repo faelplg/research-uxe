@@ -13,7 +13,6 @@ const multipliedNumbers = numbers.map((number) => number * 2);
 // 6. Filter the array to only include numbers greater than 5
 const filteredNumbers = numbers.filter((number) => number > 5);
 // 7. Sort the array in descending order
-
 const sortedNumbers = numbers.sort((a, b) => b - a);
 // 8. Reverse the array
 const reversedNumbers = numbers.reverse();
