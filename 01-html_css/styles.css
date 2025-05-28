@@ -1,0 +1,290 @@
+/* CSS Reset: Remove default browser styles for consistency */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    border: 0;
+    /* Remove default border */
+    font-size: 100%;
+    /* Inherit font size */
+    font: inherit;
+    /* Inherit font */
+    vertical-align: baseline;
+    /* Align elements baseline */
+}
+
+/* Set base line-height and box-sizing for HTML5 elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    /* Ensure HTML5 elements are block */
+}
+
+body {
+    line-height: 1;
+    /* Remove extra line height */
+}
+
+ol,
+ul {
+    list-style: square inside;
+    /* Remove default list styles */
+}
+
+blockquote,
+q {
+    quotes: none;
+    /* Remove default quotes */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    /* Remove default quote content */
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    /* Remove spacing between cells */
+    border-spacing: 0;
+}
+
+/* /\ End reset styles */
+
+:root {
+    --primary: #2563eb;
+    --secondary: #f1f5f9;
+    --accent: #f59e42;
+    --font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    background: var(--secondary);
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    /* 1rem geralmente equivale a 16px, então 2rem = 32px (por padrão dos navegadores) */
+    font-weight: 700;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 700;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: var(--secondary);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px) scale(1.03);
+}
+
+.feature-card svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cta input,
+.cta button {
+    padding: 0.75rem 1.2rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.cta button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+
+.cta button:hover {
+    background: var(--accent);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #e2e8f0;
+    color: #555;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
