@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Modern HTML5 Demo Page</title>
+    <title>UXE Lab - Modern HTML5 Page</title>
     <meta name="description" content="A modern HTML5 page using advanced and widely used features.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="https://fav.farm/🌐">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="typography.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Modern HTML5 Demo Page</h1>
+        <h1 class="text--headline">UXE Lab - Experiment 01</h1>
+        <h2 class="text--subhead">Modern HTML5 Page</h2>
         <nav aria-label="Main navigation">
             <a href="#features">Features</a>
             <a href="#about">About</a>
@@ -77,21 +81,24 @@
         <section id="contact">
             <h2>Contact Us</h2>
             <form class="cta" autocomplete="on" aria-label="Contact form" onsubmit="event.preventDefault(); alert('Thank you!');">
-                <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
+                <input autocomplete="email" type="email" name="email" placeholder="Your email" required aria-label="Email address">
                 <button type="submit">Subscribe</button>
             </form>
         </section>
     </main>
     <footer>
-        &copy; 2024 Modern HTML5 Demo. Built with ❤️ and best practices.
+        &copy; 2025 Modern HTML5 Demo. Built with ❤️ and best practices.
     </footer>
     <script>
         // Example: Dark mode toggle (progressive enhancement)
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.body.style.background = '#18181b';
-            document.body.style.color = '#f1f5f9';
-            document.querySelector('main').style.background = '#27272a';
+            document.body.classList.add('dark');
         }
+        // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        //     document.body.style.background = '#18181b';
+        //     document.body.style.color = '#f1f5f9';
+        //     document.querySelector('main').style.background = '#27272a';
+        // }
     </script>
 </body>
 </html></form></div>

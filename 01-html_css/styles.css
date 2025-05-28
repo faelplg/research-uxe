@@ -1,264 +1,139 @@
-/* CSS Reset: Remove default browser styles for consistency */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    /* Remove default margin */
-    padding: 0;
-    /* Remove default padding */
-    border: 0;
-    /* Remove default border */
-    font-size: 100%;
-    /* Inherit font size */
-    font: inherit;
-    /* Inherit font */
-    vertical-align: baseline;
-    /* Align elements baseline */
-}
-
-/* Set base line-height and box-sizing for HTML5 elements */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-    /* Ensure HTML5 elements are block */
-}
-
-body {
-    line-height: 1;
-    /* Remove extra line height */
-}
-
-ol,
-ul {
-    list-style: square inside;
-    /* Remove default list styles */
-}
-
-blockquote,
-q {
-    quotes: none;
-    /* Remove default quotes */
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    /* Remove default quote content */
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    /* Remove spacing between cells */
-    border-spacing: 0;
-}
-
-/* /\ End reset styles */
-
-:root {
-    --primary: #2563eb;
-    --secondary: #f1f5f9;
-    --accent: #f59e42;
-    --font: Verdana, Geneva, Tahoma, sans-serif;
-}
+/*  \/ Program styles */
 
 * {
     box-sizing: border-box;
 }
 
+/*  Font-size global settings.
+    1em = 16px.
+    1rem = 10px. */
+html {
+    /*  I want 10px as the default font-size.
+        If 16px is the root default.
+        10px divided by 16px = 0.625
+        Now 1rem ~= 10px; */
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
-    font-family: var(--font);
-    background: var(--secondary);
-    color: #222;
-    line-height: 1.6;
+    background: var(--background-color);
+    color: var(--font-color);
+}
+
+body.dark {
+    background: var(--background-color-dark);
+    color: var(--font-color-light);
 }
 
 header {
-    background: var(--primary);
-    color: #fff;
-    padding: 1.5rem 0;
+    background: var(--color-primary);
+    color: var(--font-color-light);
+    padding: 2.4rem 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    /* 1rem geralmente equivale a 16px, então 2rem = 32px (por padrão dos navegadores) */
-    font-weight: 700;
+body.dark>header {
+    background: var(--color-primary-dark);
+    color: var(--font-color-light);
 }
 
 nav {
-    margin-top: 1rem;
+    margin-top: 1.6rem;
 }
 
 nav a {
-    color: #fff;
+    color: var(--font-color-light);
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 1.6rem;
     font-weight: 700;
     transition: color 0.2s;
 }
 
 nav a:hover {
-    color: var(--accent);
+    color: var(--color-secondary);
 }
 
 main {
     max-width: 900px;
-    margin: 2rem auto;
-    background: #fff;
+    margin: 3.2rem auto;
+    background: var(--background-color-2);
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
-    padding: 2rem;
+    padding: 3.2rem;
 }
 
-section {
-    margin-bottom: 2.5rem;
+body.dark>main {
+    background: var(--background-color-gray);
 }
 
-h1,
-h2 {
-    font-weight: 700;
-    margin-top: 0;
+section:not(:last-child) {
+    margin-bottom: 4rem;
 }
 
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
+    gap: 2.4rem;
 }
 
 .feature-card {
-    background: var(--secondary);
-    border-radius: 8px;
-    padding: 1.5rem;
+    background: var(--background-color-3);
+    color: var(--font-color);
+    border-radius: 0.8rem;
+    padding: 2.4rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     text-align: center;
-    transition: transform 0.2s;
+    transition: background-color 0.6s, transform 0.6s;
 }
 
 .feature-card:hover {
     transform: translateY(-4px) scale(1.03);
+    background-color: var(--color-secondary-light);
 }
 
 .feature-card svg {
     width: 40px;
     height: 40px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     color: var(--primary);
+}
+
+summary,
+::marker {
+    cursor: pointer;
+}
+
+summary:hover {
+    color: var(--color-secondary);
+}
+
+ul {
+    padding-left: 3.2rem;
+    list-style: disc;
 }
 
 .cta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 1.6rem;
+    margin-top: 3.2rem;
 }
 
 .cta input,
 .cta button {
-    padding: 0.75rem 1.2rem;
-    border-radius: 6px;
+    padding: 1.2rem 1.92rem;
+    border-radius: 0.6rem;
     border: 1px solid #ddd;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .cta button {
-    background: var(--primary);
+    background: var(--color-primary);
     color: #fff;
     border: none;
     cursor: pointer;
@@ -267,21 +142,21 @@ h2 {
 }
 
 .cta button:hover {
-    background: var(--accent);
+    background: var(--color-secondary);
 }
 
 footer {
     text-align: center;
-    padding: 1.5rem 0;
-    background: #e2e8f0;
-    color: #555;
-    font-size: 0.95rem;
-    margin-top: 2rem;
+    padding: 4rem 0;
+    background: var(--background-color-2);
+    color: var(--font-color-secondary);
+    font-size: 1.52rem;
+    margin-top: 2.4rem;
 }
 
 @media (max-width: 600px) {
     main {
-        padding: 1rem;
+        padding: 1.6rem;
     }
 
     .features {

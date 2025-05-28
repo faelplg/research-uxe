@@ -1,0 +1,63 @@
+/* \/ CSS Reset: Remove default browser styles for consistency */
+* {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    border: 0;
+    /* Remove default border */
+    font-size: 100%;
+    /* Inherit font size */
+    font: inherit;
+    /* Inherit font */
+    vertical-align: baseline;
+    /* Align elements baseline */
+}
+
+/* Set base line-height and box-sizing for HTML5 elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+    /* Ensure HTML5 elements are block */
+}
+
+body {
+    line-height: 1;
+    /* Remove extra line height */
+}
+
+ol,
+ul {
+    list-style: none;
+    /* Remove default list styles */
+}
+
+blockquote,
+q {
+    quotes: none;
+    /* Remove default quotes */
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    /* Remove default quote content */
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    /* Remove spacing between cells */
+    border-spacing: 0;
+}
