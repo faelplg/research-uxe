@@ -9,13 +9,24 @@ This project is a laboratory for experiments in UX Engineering (UXE). Here, we e
 - Contemporary, ethereal palette with emotional contrast
 - Typography that suggests both rationality and artistic expression
 
-### Suggested Fonts
+### Considered Fonts
 
 Considering the balance between artistic expressiveness and digital structure, my suggestion is:
 
 - Titles and highlights: 'Space Grotesk' – geometric and experimental
 - Body text and UI: 'Inter' or 'IBM Plex Sans' – clean and versatile
 - Monospace (for technical elements or code): 'Fira Code'
+
+### Considered Palette
+
+| Name              | Hex       | Function                             |
+| ----------------- | --------- | ------------------------------------ |
+| **Soft Fail**     | `#e5e5e6` | Backgrounds, empty "white" spaces    |
+| **Live Error**    | `#ff4c4c` | Accents, highlights, "poetic alerts" |
+| **Blind Pixel**   | `#0d0d0d` | Primary typography, depth            |
+| **Blue Noise**    | `#577fff` | Links, hover, soft digitality        |
+| **Glitch Gray**   | `#777777` | Neutral elements, wireframes         |
+| **Lavender Loop** | `#c8b3ec` | Creativity, art, transcendence       |
 
 ## Exploratory Ideas
 
