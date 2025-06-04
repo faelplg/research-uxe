@@ -1,61 +1,68 @@
+/**
+ * --color-bg is the background of the stage.
+ * --color-surface are the focus boxes where the main scene takes place.
+ * --color-surface-muted is the elevated floor where some boxes rest.
+ * --color-primary for buttons, links and key elements.
+ * --color-accent for subtle highlights, icons, badges.
+ * --color-secondary for creative sections, visual highlights and hover states.
+ */
+
 :root {
-    /* Soft Fail */
-    --color-bg: #e5e5e6;
-    --color-surface: #ffffff;
-    --color-surface-muted: #f2f2f2;
-    /* Blind Pixel */
-    --color-contrast: #0d0d0d;
+  /* Soft Fail */
+  --color-bg: #e8e6f0;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f4f1f9;
+  --color-contrast: #121212;
 
-    /* Lavender Loop */
-    --color-primary: #c8b3ec;
-    --color-primary-light: #ede3fb;
-    --color-primary-dark: #a191c1;
+  /* Lavender Loop */
+  --color-primary: #a88ad4;
+  --color-primary-light: #e4d8f6;
+  --color-primary-dark: #6b4c9f;
 
-    /* Live Error */
-    --color-secondary: #ff4c4c;
-    --color-secondary-light: #ff9999;
-    --color-secondary-dark: #c00000;
+  /* Glitch Lilac (nova secundária) */
+  --color-secondary: #db8fe0;
+  --color-secondary-light: #f6d4f8;
+  --color-secondary-dark: #a656b3;
 
-    /* Blue Noise */
-    --color-accent: #577fff;
-    --color-accent-muted: #b3c7ff;
+  /* Soft Green (novo acento) */
+  --color-accent: #5bb89a;
+  --color-accent-muted: #cdeee2;
 
-    --text-primary: #0d0d0d;
-    /* Glitch Gray */
-    --text-secondary: #777777;
-    --text-inverse: #ffffff;
+  /* Texto e contraste */
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+  --text-inverse: #ffffff;
 
-    --border-color: #cfcfcf;
+  --border-color: #cfcfcf;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        /* Blind Pixel */
-        --color-bg: #0d0d0d;
-        --color-surface: #1a1a1a;
-        --color-surface-muted: #2b2b2b;
-        /* Soft Fail */
-        --color-contrast: #e5e5e6;
+  :root {
+    /* Blind Pixel */
+    --color-bg: #121212;
+    --color-surface: #1f1a2a;
+    --color-surface-muted: #2e2a3c;
+    --color-contrast: #e8e6f0;
 
-        /* Lavender Loop */
-        --color-primary: #9d7ad0;
-        --color-primary-light: #c8b3ec;
-        --color-primary-dark: #6b4c9f;
+    /* Lavender Loop */
+    --color-primary: #9b7cc4;
+    --color-primary-light: #c8b3ec;
+    --color-primary-dark: #6b4c9f;
 
-        /* Live Error */
-        --color-secondary: #ff4c4c;
-        --color-secondary-light: #ff8787;
-        --color-secondary-dark: #a80000;
+    /* Glitch Lilac */
+    --color-secondary: #c679cc;
+    --color-secondary-light: #e6c5e9;
+    --color-secondary-dark: #9a58a5;
 
-        /* Blue Noise */
-        --color-accent: #7aa2ff;
-        --color-accent-muted: #3a4e77;
+    /* Soft Green */
+    --color-accent: #68c3ab;
+    --color-accent-muted: #3b5d51;
 
-        --text-primary: #f0f0f0;
-        /* Glitch Gray */
-        --text-secondary: #a0a0a0;
-        --text-inverse: #0d0d0d;
+    /* Texto e contraste */
+    --text-primary: #f4f4f4;
+    --text-secondary: #a6a6a6;
+    --text-inverse: #121212;
 
-        --border-color: #3d3d3d;
-    }
+    --border-color: #3d3d3d;
+  }
 }
