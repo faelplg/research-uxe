@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- SEO Meta Tags -->
+    <title>Site Modelo - Página Inicial</title>
+    <meta
+      name="description"
+      content="Página esqueleto moderna para desenvolvimento web com HTML, CSS e JavaScript puro."
+    />
+    <meta
+      name="keywords"
+      content="html, css, javascript, web development, seo"
+    />
+    <meta name="author" content="Seu Nome" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://seusite.com/" />
+    <meta property="og:title" content="Site Modelo - Página Inicial" />
+    <meta
+      property="og:description"
+      content="Página esqueleto moderna para desenvolvimento web com HTML, CSS e JavaScript puro."
+    />
+    <meta property="og:image" content="https://seusite.com/img/thumbnail.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://seusite.com/" />
+    <meta property="twitter:title" content="Site Modelo - Página Inicial" />
+    <meta
+      property="twitter:description"
+      content="Página esqueleto moderna para desenvolvimento web com HTML, CSS e JavaScript puro."
+    />
+    <meta
+      property="twitter:image"
+      content="https://seusite.com/img/thumbnail.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Pré-carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estruturado para SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Site Modelo",
+        "url": "https://seusite.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://seusite.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo-container">
+          <a href="index.html" class="logo">Site Modelo</a>
+        </div>
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle" aria-label="Menu de navegação">
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="#" class="active">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1>Demonstração de Cores e Componentes</h1>
+          <p class="lead">
+            Este é um template esqueleto moderno com as melhores práticas de SEO
+            e performance.
+          </p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">Botão Primário</a>
+            <a href="#" class="btn btn-secondary">Botão Secundário</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Color Palette Section -->
+      <section class="section color-palette">
+        <div class="container">
+          <h2>Paleta de Cores</h2>
+          <p>Visualização da paleta de cores definida no arquivo colors.css</p>
+
+          <div class="color-grid">
+            <div class="color-card">
+              <div class="color-sample bg-primary"></div>
+              <div class="color-info">
+                <h3>Cor Primária</h3>
+                <code>var(--color-primary)</code>
+              </div>
+            </div>
+            <div class="color-card">
+              <div class="color-sample bg-primary-light"></div>
+              <div class="color-info">
+                <h3>Primária Clara</h3>
+                <code>var(--color-primary-light)</code>
+              </div>
+            </div>
+            <div class="color-card">
+              <div class="color-sample bg-primary-dark"></div>
+              <div class="color-info">
+                <h3>Primária Escura</h3>
+                <code>var(--color-primary-dark)</code>
+              </div>
+            </div>
+            <div class="color-card">
+              <div class="color-sample bg-secondary"></div>
+              <div class="color-info">
+                <h3>Secundária</h3>
+                <code>var(--color-secondary)</code>
+              </div>
+            </div>
+            <div class="color-card">
+              <div class="color-sample bg-secondary-light"></div>
+              <div class="color-info">
+                <h3>Secundária Clara</h3>
+                <code>var(--color-secondary-light)</code>
+              </div>
+            </div>
+            <div class="color-card">
+              <div class="color-sample bg-secondary-dark"></div>
+              <div class="color-info">
+                <h3>Secundária Escura</h3>
+                <code>var(--color-secondary-dark)</code>
+              </div>
+            </div>
+            <div class="color-card">
+              <div class="color-sample bg-accent"></div>
+              <div class="color-info">
+                <h3>Accent</h3>
+                <code>var(--color-accent)</code>
+              </div>
+            </div>
+            <div class="color-card">
+              <div class="color-sample bg-accent-muted"></div>
+              <div class="color-info">
+                <h3>Accent Muted</h3>
+                <code>var(--color-accent-muted)</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="color-grid surface-colors">
+            <div class="color-card">
+              <div class="color-sample bg-surface"></div>
+              <div class="color-info">
+                <h3>Superfície</h3>
+                <code>var(--color-surface)</code>
+              </div>
+            </div>
+            <div class="color-card">
+              <div class="color-sample bg-surface-muted"></div>
+              <div class="color-info">
+                <h3>Superfície Muted</h3>
+                <code>var(--color-surface-muted)</code>
+              </div>
+            </div>
+            <div class="color-card">
+              <div class="color-sample bg-contrast"></div>
+              <div class="color-info">
+                <h3>Contraste</h3>
+                <code>var(--color-contrast)</code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Components Section -->
+      <section class="section components">
+        <div class="container">
+          <h2>Componentes UI</h2>
+          <p>Componentes básicos estilizados com a paleta de cores</p>
+
+          <div class="component-grid">
+            <!-- Cards -->
+            <div class="component-showcase">
+              <h3>Cards</h3>
+              <div class="card-examples">
+                <div class="card">
+                  <h4>Card Título</h4>
+                  <p>Este é um exemplo de card usando as cores do tema.</p>
+                  <a href="#" class="btn btn-sm btn-primary">Ação</a>
+                </div>
+                <div class="card card-accent">
+                  <h4>Card com Accent</h4>
+                  <p>Este card usa a cor accent como destaque.</p>
+                  <a href="#" class="btn btn-sm btn-accent">Ação</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form Elements -->
+            <div class="component-showcase">
+              <h3>Elementos de Formulário</h3>
+              <form class="form-example">
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input type="text" id="name" placeholder="Digite seu nome" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensagem</label>
+                  <textarea
+                    id="message"
+                    rows="3"
+                    placeholder="Digite sua mensagem"
+                  ></textarea>
+                </div>
+                <div class="form-group checkbox">
+                  <input type="checkbox" id="consent" />
+                  <label for="consent">Concordo com os termos</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
+
+            <!-- Buttons -->
+            <div class="component-showcase">
+              <h3>Botões</h3>
+              <div class="button-examples">
+                <button class="btn btn-primary">Primário</button>
+                <button class="btn btn-secondary">Secundário</button>
+                <button class="btn btn-accent">Accent</button>
+                <button class="btn btn-outline">Outline</button>
+                <button class="btn btn-sm btn-primary">Pequeno</button>
+                <button class="btn btn-lg btn-primary">Grande</button>
+                <button class="btn btn-primary" disabled>Desabilitado</button>
+              </div>
+            </div>
+
+            <!-- Typography -->
+            <div class="component-showcase">
+              <h3>Tipografia</h3>
+              <div class="typography-examples">
+                <h1>Título H1</h1>
+                <h2>Título H2</h2>
+                <h3>Título H3</h3>
+                <h4>Título H4</h4>
+                <p>
+                  Parágrafo regular com <strong>texto em negrito</strong> e
+                  <em>texto em itálico</em>.
+                </p>
+                <p class="text-primary">Texto em cor primária</p>
+                <p class="text-secondary">Texto em cor secundária</p>
+                <p class="text-accent">Texto em cor accent</p>
+                <a href="#">Link estilizado</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dark/Light Mode Demo -->
+      <section class="section theme-demo">
+        <div class="container">
+          <h2>Demonstração de Temas Claro/Escuro</h2>
+          <p>
+            O tema se adapta automaticamente às preferências do sistema, mas
+            você também pode alternar manualmente:
+          </p>
+          <button id="theme-toggle" class="btn btn-outline">
+            Alternar Tema
+          </button>
+
+          <div class="theme-cards">
+            <div class="card">
+              <h4>Card no Tema Atual</h4>
+              <p>Este card se adapta ao tema atual do sistema.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h4>Sobre</h4>
+            <p>
+              Uma página esqueleto moderna desenvolvida com as melhores práticas
+              de SEO e performance, usando apenas HTML, CSS e JavaScript
+              vanilla.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h4>Links</h4>
+            <ul class="footer-links">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Serviços</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Contato</h4>
+            <address>
+              <p>
+                Email:
+                <a href="mailto:contato@seusite.com">contato@seusite.com</a>
+              </p>
+              <p>
+                Telefone: <a href="tel:+5511999999999">+55 11 99999-9999</a>
+              </p>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Site Modelo. Todos os direitos reservados.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"
+              ><span class="sr-only">Facebook</span>FB</a
+            >
+            <a href="#" aria-label="Twitter"
+              ><span class="sr-only">Twitter</span>TW</a
+            >
+            <a href="#" aria-label="Instagram"
+              ><span class="sr-only">Instagram</span>IG</a
+            >
+            <a href="#" aria-label="LinkedIn"
+              ><span class="sr-only">LinkedIn</span>IN</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
